@@ -20,4 +20,4 @@ jobs:
           ssh-keyscan -H ${{ secrets.HOST_SERVER_IP }} >> ~/.ssh/known_hosts
       - name: Copy files to server
         run: |
-          rsync -vrm  ./* ${{ secrets.SSH_LOGIN_CREDS }}:/data01/virt123851/domeenid/actions.rfn.ee/actions
+          rsync -vrm  ./* ${{ secrets.SSH_LOGIN_CREDS }}:/data02/virt123851/domeenid/actions.rfn.ee/actions
